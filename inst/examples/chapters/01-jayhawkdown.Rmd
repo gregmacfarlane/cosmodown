@@ -1,6 +1,6 @@
-# Using jayhawkdown
+# Using cosmodown
 
-The **jayhawkdown** package is designed to provide a template for writing theses and dissertations at the University of Kansas using **rmarkdown** [@R-rmarkdown] and **bookdown** [@R-bookdown]. This chapter walks you through how to edit and alter the template to fit your needs.
+The **cosmodown** package is designed to provide a template for writing theses and dissertations at the University of Kansas using **rmarkdown** [@R-rmarkdown] and **bookdown** [@R-bookdown]. This chapter walks you through how to edit and alter the template to fit your needs.
 
 ## Getting started
 
@@ -14,4 +14,4 @@ To add a new chapter, simply create a new R Markdown document and add it the `ch
 
 ## Creating your documents
 
-To create a PDF version of your thesis or dissertation, press the knit button at the top of the RStudio editor. If you aren't using RStudio, you can use `bookdown::render_book("index.Rmd", "jayhawkdown::thesis_pdf")`, where `skeleton.rmd` is the name of the R Markdown document that include the YAML metadata. This will create your document at `_book/thesis.pdf`. To change the name of this file, you can edit the `book_filename` in `_bookdown.yml`.
+To create a PDF version of your thesis or dissertation, press the knit button at the top of the RStudio editor. If you aren't using RStudio, you can use `bookdown::render_book("index.Rmd", "cosmodown::thesis_pdf")`, where `skeleton.rmd` is the name of the R Markdown document that include the YAML metadata. This will create your document at `_book/thesis.pdf`. To change the name of this file, you can edit the `book_filename` in `_bookdown.yml`.

@@ -1,6 +1,6 @@
 ---
 ### Required Information -------------------------------------------------------
-title: "Writing Theses and Dissertations with jayhawkdown"
+title: "Writing Theses and Dissertations with cosmodown"
 author: "W. Jake Thompson"
 credentials:
   - "B.S. Behavioral Neuroscience, University of Kansas, 2014"
@@ -23,30 +23,30 @@ role5: "Outside member"
 datedefended: "`r format(Sys.Date(), '%B %d, %Y')`"
 dateapproved: "`r format(Sys.Date(), '%B %d, %Y')`"
 ### Rendering Options ----------------------------------------------------------
-output: jayhawkdown::thesis_pdf
+output: cosmodown::thesis_pdf
 bibliography: ["bib/references.bib", "bib/packages.bib"]
 biblio-style: apalike2
 csl: csl/apa.csl
 nocite: |
-  @R-knitr, @R-rmarkdown, @R-bookdown, @R-jayhawkdown
+  @R-knitr, @R-rmarkdown, @R-bookdown, @R-cosmodown
 link-citations: yes
 lot: true
 lof: true
 ### Website options ------------------------------------------------------------
 description: >
-  An example of how to use the jayhawkdown package to write dissertations and
+  An example of how to use the cosmodown package to write dissertations and
   theses at the University of Kansas. This package allows users to write in
   R Markdown and have the output generate into a PDF that meets university
   guidelines.
-url: https\://jayhawkdown.wjakethompson.com/
-github-repo: wjakethompson/jayhawkdown
-cover-image: "figures/jayhawkdown-large.png"
+url: https\://cosmodown.wjakethompson.com/
+github-repo: wjakethompson/cosmodown
+cover-image: "figures/cosmodown-large.png"
 favicon: "figures/favicon.png"
 ### Pretext Sections -----------------------------------------------------------
 abstract: >
-  `r if (knitr::is_latex_output()) jayhawkdown::inc("pre/00-abstract.Rmd")`
+  `r if (knitr::is_latex_output()) cosmodown::inc("pre/00-abstract.Rmd")`
 acknowledgements: >
-  `r if (knitr::is_latex_output()) jayhawkdown::inc("pre/00-acknowledge.Rmd")`
+  `r if (knitr::is_latex_output()) cosmodown::inc("pre/00-acknowledge.Rmd")`
 ---
 
 ```{r setup, include = FALSE}
@@ -67,9 +67,9 @@ options(knitr.kable.NA = '')
 
 # Welcome {-}
 
-<a href="https://github.com/wjakethompson/jayhawkdown"><img src="figures/jayhawkdown-large.png" width="181" height="210" align="right" alt="jayhawkdown logo" /></a>
+<a href="https://github.com/wjakethompson/cosmodown"><img src="figures/cosmodown-large.png" width="181" height="210" align="right" alt="cosmodown logo" /></a>
 
-This is the website for the **jayhawkdown** R package [@R-jayhawkdown]. The website is meant to provide documentation and example usage for creating a thesis or dissertation using the University of Kansas formatting. In addition to the website, this document is  also rendered as a PDF using the University of Kansas $\LaTeX$ template. The PDF can be downloaded from the top of this page to see what the rendered PDF document looks like with the correct formatting.
+This is the website for the **cosmodown** R package [@R-cosmodown]. The website is meant to provide documentation and example usage for creating a thesis or dissertation using the University of Kansas formatting. In addition to the website, this document is  also rendered as a PDF using the University of Kansas $\LaTeX$ template. The PDF can be downloaded from the top of this page to see what the rendered PDF document looks like with the correct formatting.
 
 ## License {-}
 
@@ -77,7 +77,7 @@ This is the website for the **jayhawkdown** R package [@R-jayhawkdown]. The webs
 
 This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
 
-The **jayhawkdown** package is licensed under a <a rel="license" href="https://opensource.org/licenses/GPL-3.0">GNU General Public License, version 3</a>.
+The **cosmodown** package is licensed under a <a rel="license" href="https://opensource.org/licenses/GPL-3.0">GNU General Public License, version 3</a>.
 
 # Abstract {-}
 

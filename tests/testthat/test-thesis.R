@@ -16,8 +16,8 @@ test_that("thesis-pdf renders", {
   oldwd <- setwd(new_dir)
   on.exit(setwd(oldwd), add = TRUE)
 
-  jayhawkdown_skeleton(new_dir)
-  bookdown::render_book("index.Rmd", output_format = "jayhawkdown::thesis_pdf",
+  cosmodown_skeleton(new_dir)
+  bookdown::render_book("index.Rmd", output_format = "cosmodown::thesis_pdf",
                         clean_envir = FALSE)
   print(paste("6:", new_dir))
   expect_true(dir.exists("_book"))

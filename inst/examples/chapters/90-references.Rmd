@@ -7,7 +7,7 @@
 ```{r write-packages, include = FALSE}
 suppressWarnings(
   knitr::write_bib(c(.packages(), "knitr", "rmarkdown", "bookdown",
-    "jayhawkdown"), "bib/packages.bib")
+    "cosmodown"), "bib/packages.bib")
 )
 ```
 

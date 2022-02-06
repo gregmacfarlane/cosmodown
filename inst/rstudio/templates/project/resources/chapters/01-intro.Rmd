@@ -11,7 +11,7 @@ This may also be a good place to discuss any constraints of your study. This wou
 This chapter is also a convenient place to make sure you cite the software used to run your analyses and generate the final document. For you convenience, here is some code that will cite all of the package you have loaded, as well as the packages needed to render the document.
 
 ```{r}
-render_pkgs <- c("bookdown", "jayhawkdown", "knitr", "rmarkdown")
+render_pkgs <- c("bookdown", "cosmodown", "knitr", "rmarkdown")
 loaded_pkgs <- sort(setdiff(.packages(), c("stats", "graphics", "grDevices",
   "utils", "datasets", "methods", "base")))
 

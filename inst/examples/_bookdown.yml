@@ -1,5 +1,5 @@
-book_filename: jayhawkdown
-repo: https://github.com/wjakethompson/jayhawkdown/
+book_filename: cosmodown
+repo: https://github.com/wjakethompson/cosmodown/
 output_dir: _book
 delete_merged_file: true
 language:
@@ -8,13 +8,13 @@ language:
     chapter_name: "Chapter "
 
 download: [
-  ["jayhawkdown.pdf", "PDF"]
+  ["cosmodown.pdf", "PDF"]
 ]
 
 rmd_files: [
   "index.Rmd",
 
-  "chapters/01-jayhawkdown.Rmd",
+  "chapters/01-cosmodown.Rmd",
   "chapters/02-markdown-formatting.Rmd",
 
   "chapters/90-references.Rmd",

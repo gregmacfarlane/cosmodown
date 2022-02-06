@@ -124,7 +124,7 @@ The final type of cross referencing that I'll discuss here is referencing sectio
 ## Formatting text {#format}
 ```
 
-So to create a reference for this section I can use `\@ref(format)`. You can also create links. For example, the following code will create a link where the word "instructions" links to the "Getting started" section in Chapter \@ref(using-jayhawkdown):
+So to create a reference for this section I can use `\@ref(format)`. You can also create links. For example, the following code will create a link where the word "instructions" links to the "Getting started" section in Chapter \@ref(using-cosmodown):
 
 ```markdown
 [instructions][Getting started]

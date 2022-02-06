@@ -1,4 +1,4 @@
-jayhawkdown::thesis_pdf: default
+cosmodown::thesis_pdf: default
 
 bookdown::gitbook:
   dev: svglite
@@ -7,9 +7,9 @@ bookdown::gitbook:
     toc:
       collapse: section
       before: |
-        <li><strong><a href="./">jayhawkdown</a></strong></li>
+        <li><strong><a href="./">cosmodown</a></strong></li>
       after: |
-        <li><a href="https://github.com/wjakethompson/jayhawkdown" target="_blank">Published with jayhawkdown and bookdown</a></li>
+        <li><a href="https://github.com/wjakethompson/cosmodown" target="_blank">Published with cosmodown and bookdown</a></li>
     download: [pdf]
     sharing:
       github: yes

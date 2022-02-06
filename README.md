@@ -47,7 +47,7 @@ possible to use this template with a different IDE.
     <img src="README/rmarkdown.png" width="50%" style="display: block; margin: auto;" />
 
 3.  Select from templates, the University of Kansas Thesis template from
-    the **jayhawkdown** package.
+    the **cosmodown** package.
 
     <img src="README/select-template.png" width="50%" style="display: block; margin: auto;" />
 
@@ -70,16 +70,16 @@ possible to use this template with a different IDE.
 ### Other Usage
 
 If you are not using RStudio, you can create a new R Markdown from the
-**jayhawkdown** template by using `rmarkdown::draft()`.
+**cosmodown** template by using `rmarkdown::draft()`.
 
 1.  Open R in your preferred IDE.
 
-2.  Open the **jayhawkdown** template using `rmarkdown::draft()`. This
+2.  Open the **cosmodown** template using `rmarkdown::draft()`. This
     will create a directory called `index/` (or whatever you name the R
     Markdown document) in your current working directory.
 
     ``` r
-    rmarkdown::draft("index.rmd", template = "kansas", package = "jayhawkdown",
+    rmarkdown::draft("index.rmd", template = "kansas", package = "cosmodown",
       create_dir = TRUE)
     ```
 
@@ -88,7 +88,7 @@ If you are not using RStudio, you can create a new R Markdown from the
 
     ``` r
     setwd("index/")
-    bookdown::render_book("index.rmd", "jayhawkdown::thesis_pdf")
+    bookdown::render_book("index.rmd", "cosmodown::thesis_pdf")
     ```
 
 4.  If the PDF does not open automatically, you will be able to find it
@@ -101,9 +101,9 @@ If the example PDF fails to render, try these steps:
 -   If you are not using RStudio, attempt to render in RStudio.
 -   Make sure your LaTeX environment was successfully setup.
 -   Make sure your R packages are up to date, specifically
-    **rmarkdown**, **bookdown**, **jayhawkdown**, and **knitr**.
+    **rmarkdown**, **bookdown**, **cosmodown**, and **knitr**.
 
 If errors persist after trying all of these steps, post your process
 along with the resulting error to a [new
-issue](https://github.com/wjakethompson/jayhawkdown/issues) on Github,
+issue](https://github.com/gregmacfarlane/cosmodown/issues) on Github,
 and I will try to help.
