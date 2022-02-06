@@ -1,20 +1,20 @@
-Package: jayhawkdown
-Title: A Bookdown Template for University of Kansas Dissertations
+Package: cosmodown
+Title: A Bookdown Template for Brigham Young University theses
 Version: 1.0.0
 Authors@R: c(
     person("W. Jake", "Thompson", email = "wjakethompson@gmail.com",
-      role = c("aut", "cre")),
-    person("Paul E.", "Johnson", email = "pauljohn@ku.edu", role = "ctb")
+      role = c("aut")),
+    person("Greg", "Macfarlane", email = "gregmacfarlane@gmail.com",
+      role = c("aut", "cre"))
     )
-Description: A bookdown template for writing theses and dissertations at the
-    University of Kansas. This package makes use of the LaTeX template developed
-    by Paul Johnson, with modifications to support the markdown language.
+Description: A bookdown template for writing theses and dissertations at Brigham
+    Young University. This package is a fork of the jahawkdown package by
+    Jake Thompson, with a new LaTeX template by Greg Macfarlane.
 License: GPL-3 | file LICENSE
 Encoding: UTF-8
 LazyData: true
-URL: https://jayhawkdown.wjakethompson.com,
-    https://github.com/wjakethompson/jayhawkdown
-BugReports: https://github.com/wjakethompson/jayhawkdown/issues
+URL: https://github.com/gregmacfarlane/cosmodown
+BugReports: https://github.com/gregmacfarlane/cosmodown/issues
 Depends:
     R (>= 3.1.0)
 Imports:
