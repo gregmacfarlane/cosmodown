@@ -40,5 +40,5 @@ Suggests:
     tidyr (>= 1.0.0),
     tinytex (>= 0.19),
     covr
-RoxygenNote: 7.0.2
+RoxygenNote: 7.1.2
 Roxygen: list(markdown = TRUE)

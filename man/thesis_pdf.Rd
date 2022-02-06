@@ -15,18 +15,18 @@ should be created}
 \item{...}{arguments to be passed to \code{\link[bookdown:pdf_book]{bookdown::pdf_book()}}}
 }
 \value{
-A modified \code{pdf_document} based on the Reed Senior Thesis LaTeX
+A modified \code{pdf_document} based on the BYU thesis class
 template
 }
 \description{
 This is a function called in output in the YAML of the driver Rmd file
-to specify using the University of Kansas LaTeX template and cls files.
+to specify using the BYU LaTeX template and cls files.
 }
 \note{
 The arguments highlight, keep_tex, and pandoc_args, are already set.
 }
 \examples{
 \dontrun{
- output: jayhawkdown::thesis_pdf
+ output: cosmodown::thesis_pdf
 }
 }

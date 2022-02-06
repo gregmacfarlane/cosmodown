@@ -1,12 +1,12 @@
-#' jayhawkdown: Theses and dissertations for the University of Kansas
+#' cosmodown: Theses and dissertations for BYU
 #'
-#' This package creates theses/dissertations for the University of Kansas.
+#' This package creates theses/dissertations for Brigham Young University
 #'
-#' @section thesis_gitbook:
+#' @section gitbook:
 #' Creates an R Markdown thesis template as a webpage
 #' @section thesis_pdf:
 #' Creates an R Markdown thesis template as a PDF
 #' @docType package
-#' @name jayhawkdown
+#' @name cosmodown
 #' @importFrom xfun read_utf8 write_utf8
 NULL

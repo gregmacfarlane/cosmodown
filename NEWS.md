@@ -1,3 +1,3 @@
-# jayhawkdown 1.0.0
+# cosmodown 1.0.0
 
 * Initial release

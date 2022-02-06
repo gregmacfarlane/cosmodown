@@ -1,4 +1,4 @@
-test_that("copying jayhawkdown files works", {
+test_that("copying cosmodown files works", {
   testthat::skip_on_cran()
 
   # work in a temp directory
@@ -7,7 +7,7 @@ test_that("copying jayhawkdown files works", {
   oldwd <- setwd(dir)
   on.exit(setwd(oldwd), add = TRUE)
 
-  jayhawkdown_skeleton(dir)
+  cosmodown_skeleton(dir)
   check_files <- list.files(dir, include.dirs = TRUE, recursive = TRUE)
 
   exp_files <- c("_bookdown.yml", "_output.yml", "bib", "bib/packages.bib",

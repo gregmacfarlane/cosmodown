@@ -14,7 +14,7 @@ NULL
 # Helper functions from bookdown and rticles -----------------------------------
 find_file <- function(template, file) {
   template <- system.file("rmarkdown", "templates", template, file,
-    package = "jayhawkdown")
+    package = "cosmodown")
   if (template == "") {
     stop("Couldn't find template file ", template, "/", file, call. = FALSE)
   }
@@ -26,6 +26,6 @@ find_resource <- function(template, file) {
   find_file(template, file.path("resources", file))
 }
 
-jayhawkdown_file <- function(...) {
-  system.file(..., package = "jayhawkdown", mustWork = TRUE)
+cosmodown_file <- function(...) {
+  system.file(..., package = "cosmodown", mustWork = TRUE)
 }
