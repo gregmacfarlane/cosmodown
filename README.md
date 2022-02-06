@@ -1,46 +1,37 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# jayhawkdown <img src="man/figures/jayhawkdown-large.png" align="right" width="120" />
+# cosmodown <img src="man/figures/cosmodown-large.png" align="right" width="120" />
 
 <!-- badges: start -->
-
-[![Project Status: Active – The project has reached a stable, usable
-state and is being actively
-developed.](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active)
-[![Travis-CI Build
-Status](https://travis-ci.org/wjakethompson/jayhawkdown.svg?branch=master)](https://travis-ci.org/wjakethompson/jayhawkdown)
-[![AppVeyor Build
-Status](https://ci.appveyor.com/api/projects/status/github/wjakethompson/jayhawkdown?branch=master&svg=true)](https://ci.appveyor.com/project/wjakethompson/jayhawkdown)
-[![Codecov test
-coverage](https://codecov.io/gh/wjakethompson/jayhawkdown/branch/master/graph/badge.svg)](https://codecov.io/gh/wjakethompson/jayhawkdown?branch=master)
-[![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/jayhawkdown)](https://cran.r-project.org/package=jayhawkdown)
 <!-- badges: end -->
 
 This package provides a template for writing theses and dissertations at
-the University of Kansas using **rmarkdown** and **bookdown**. Much of
-this was inspired by the
+the Brigham Young University using **rmarkdown** and **bookdown**. Much
+of this was inspired by the
 [**thesisdown**](https://github.com/ismayc/thesisdown) package by
-Chester Ismay.
+Chester Ismay, and this particular implementation was taken directly
+from [**jahawkdown**](https://github.com/wjakethompson/jayhawkdown) by
+Jake Thompson.
 
-The original LaTeX template and class document were written by Paul
-Johnson, and modified for use with pandoc and R markdown.
+The original LaTeX template and class document were written by Greg
+Macfarlane, and modified for use with pandoc and R markdown.
 
 ## Installation
 
-You can install jayhawkdown from github with:
+You can install cosmodown from github with:
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("wjakethompson/jayhawkdown")
+devtools::install_github("gregmacfarlane/cosmodown")
 ```
 
 You also need a working LaTeX program:
 
-  - Macintosh: [MacTeX](https://tug.org/mactex/mactex-download.html)
-  - Linux:
+-   Macintosh: [MacTeX](https://tug.org/mactex/mactex-download.html)
+-   Linux:
     [TeXLive](https://www.tug.org/texlive/acquire-netinstall.html)
-  - Windows: [TeXLive](https://www.tug.org/texlive/windows.html)
+-   Windows: [TeXLive](https://www.tug.org/texlive/windows.html)
 
 ## Example Usage
 
@@ -52,12 +43,12 @@ possible to use this template with a different IDE.
 1.  Open a new RStudio window.
 
 2.  Open a new R Markdown document.
-    
+
     <img src="README/rmarkdown.png" width="50%" style="display: block; margin: auto;" />
 
 3.  Select from templates, the University of Kansas Thesis template from
     the **jayhawkdown** package.
-    
+
     <img src="README/select-template.png" width="50%" style="display: block; margin: auto;" />
 
 4.  Because there are multiple files for this template, you must create
@@ -70,7 +61,7 @@ possible to use this template with a different IDE.
     “Knit” button at the top of the editor to render the template, and
     read the document for instructions on how to edit the template for
     your specific paper.
-    
+
     <img src="README/knit.png" width="50%" style="display: block; margin: auto;" />
 
 6.  If the PDF does not open automatically, you will be able to find it
@@ -86,7 +77,7 @@ If you are not using RStudio, you can create a new R Markdown from the
 2.  Open the **jayhawkdown** template using `rmarkdown::draft()`. This
     will create a directory called `index/` (or whatever you name the R
     Markdown document) in your current working directory.
-    
+
     ``` r
     rmarkdown::draft("index.rmd", template = "kansas", package = "jayhawkdown",
       create_dir = TRUE)
@@ -94,7 +85,7 @@ If you are not using RStudio, you can create a new R Markdown from the
 
 3.  When the template opens, you can render the document using
     `bookdown::render_book()`.
-    
+
     ``` r
     setwd("index/")
     bookdown::render_book("index.rmd", "jayhawkdown::thesis_pdf")
@@ -107,9 +98,9 @@ If you are not using RStudio, you can create a new R Markdown from the
 
 If the example PDF fails to render, try these steps:
 
-  - If you are not using RStudio, attempt to render in RStudio.
-  - Make sure your LaTeX environment was successfully setup.
-  - Make sure your R packages are up to date, specifically
+-   If you are not using RStudio, attempt to render in RStudio.
+-   Make sure your LaTeX environment was successfully setup.
+-   Make sure your R packages are up to date, specifically
     **rmarkdown**, **bookdown**, **jayhawkdown**, and **knitr**.
 
 If errors persist after trying all of these steps, post your process

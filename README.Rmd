@@ -14,27 +14,25 @@ knitr::opts_chunk$set(
 )
 ```
 
-# jayhawkdown <img src="man/figures/jayhawkdown-large.png" align="right" width="120" />
+# cosmodown <img src="man/figures/cosmodown-large.png" align="right" width="120" />
 
 <!-- badges: start -->
-[![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active)
-[![Travis-CI Build Status](https://travis-ci.org/wjakethompson/jayhawkdown.svg?branch=master)](https://travis-ci.org/wjakethompson/jayhawkdown)
-[![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/wjakethompson/jayhawkdown?branch=master&svg=true)](https://ci.appveyor.com/project/wjakethompson/jayhawkdown)
-[![Codecov test coverage](https://codecov.io/gh/wjakethompson/jayhawkdown/branch/master/graph/badge.svg)](https://codecov.io/gh/wjakethompson/jayhawkdown?branch=master)
-[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/jayhawkdown)](https://cran.r-project.org/package=jayhawkdown)
 <!-- badges: end -->
 
-This package provides a template for writing theses and dissertations at the University of Kansas using **rmarkdown** and **bookdown**. Much of this was inspired by the [**thesisdown**](https://github.com/ismayc/thesisdown) package by Chester Ismay.
+This package provides a template for writing theses and dissertations at the
+Brigham Young University using **rmarkdown** and **bookdown**. Much of this was
+inspired by the [**thesisdown**](https://github.com/ismayc/thesisdown) package
+by Chester Ismay, and this particular implementation was taken directly from [**jahawkdown**](https://github.com/wjakethompson/jayhawkdown) by Jake Thompson.
 
-The original LaTeX template and class document were written by Paul Johnson, and modified for use with pandoc and R markdown.
+The original LaTeX template and class document were written by Greg Macfarlane, and modified for use with pandoc and R markdown.
 
 ## Installation
 
-You can install jayhawkdown from github with:
+You can install cosmodown from github with:
 
 ```{r gh-installation, eval = FALSE}
 # install.packages("devtools")
-devtools::install_github("wjakethompson/jayhawkdown")
+devtools::install_github("gregmacfarlane/cosmodown")
 ```
 
 You also need a working LaTeX program:
