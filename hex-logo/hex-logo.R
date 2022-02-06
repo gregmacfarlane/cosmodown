@@ -5,6 +5,13 @@ library(png)
 library(sp)
 library(grid)
 library(here)
+library(showtext)
+
+
+## Loading Google fonts (http://www.google.com/fonts)
+font_add_google("News Cycle", "news")
+## Automatically use showtext to render text for future devices
+showtext_auto()
 
 
 l <- 1
@@ -24,7 +31,7 @@ logo <- ggplot() +
   geom_polygon(data = hex, aes(x, y), color = "#002e5d", fill = "white",
     size = 2) +
   annotate(geom = "text", label = "cosmodown", x = 0, y = -0.55,
-    family = "Trajan Pro", color = "#002e5d", fontface = "bold", size = 6) +
+    family = "news", color = "#002e5d", fontface = "bold", size = 6) +
   annotation_custom(g, xmin = -1.1, xmax = 1.1, ymin = -0.5, ymax = 0.9) +
   coord_equal(xlim = range(hex$x), ylim = range(hex$y)) +
   scale_x_continuous(expand = c(0.04, 0)) +
@@ -39,7 +46,7 @@ logo_large <- ggplot() +
   geom_polygon(data = hex, aes(x, y), color = "#002e5d", fill = "white",
     size = 10) +
   annotate(geom = "text", label = "cosmodown", x = 0, y = -0.55,
-    family = "Trajan Pro", color = "#002e5d", fontface = "bold", size = 30) +
+    family = "news", color = "#002e5d", fontface = "bold", size = 30) +
   annotation_custom(g, xmin = -1.1, xmax = 1.1, ymin = -0.5, ymax = 0.9) +
   coord_equal(xlim = range(hex$x), ylim = range(hex$y)) +
   scale_x_continuous(expand = c(0.04, 0)) +
