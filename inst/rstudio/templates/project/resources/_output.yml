@@ -1,16 +1,17 @@
-cosmodown::thesis_pdf: default
-
 bookdown::gitbook:
-  dev: svglite
-  css: css/style.css
+  css: style.css
   config:
     toc:
-      collapse: section
       before: |
-        <li><strong><a href="./">cosmodown</a></strong></li>
+        <li><a href="./">A BYU Thesis in Bookdown</a></li>
       after: |
-        <li><a href="https://github.com/wjakethompson/cosmodown" target="_blank">Published with cosmodown and bookdown</a></li>
-    download: [pdf]
-    sharing:
-      github: yes
-      facebook: no
+        <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+    edit: https://github.com/USERNAME/REPO/edit/BRANCH/%s
+    download: ["pdf", "epub"]
+bookdown::pdf_book:
+  template: template.tex
+  latex_engine: pdflatex
+  keep_tex: yes
+  pandoc_args: [
+    "--top-level-division=chapter"
+  ]

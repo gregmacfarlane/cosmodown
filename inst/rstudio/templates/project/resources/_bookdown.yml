@@ -1,16 +1,5 @@
-rmd_files: [
-  "index.rmd",
-
-  "chapters/01-intro.Rmd",
-  "chapters/02-lit-review.Rmd",
-  "chapters/03-methods.Rmd",
-  "chapters/04-results.Rmd",
-  "chapters/05-discussion.Rmd",
-
-  "chapters/90-References.Rmd",
-  "chapters/91-appendix1.Rmd"
-]
-download: [
-  ["thesis.pdf", "PDF"]
-]
-chapter_name: "Chapter "
+delete_merged_file: true
+output_dir: "docs"
+language:
+  ui:
+    chapter_name: "Chapter "
