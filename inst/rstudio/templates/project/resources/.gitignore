@@ -4,3 +4,6 @@ _bookdown_files/*
 *.ist
 *.glo
 *.acn
+*.lof
+*.lot
+*.toc
