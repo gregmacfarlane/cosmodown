@@ -1,9 +1,9 @@
 ---
 title: |
-  Building a Thesis in \LaTeX, which can have a  
-  
-  Wrapped Title if Long
-  
+  | Building a Thesis in \LaTeX, which can have a  
+  | Wrapped Title if Long
+# Your thesis title should be inverted pyramid-shaped, with the longest
+# line on top and shorter lines below. Add a new line as tab-|-space-Words
 author: 'Cosmo Cougar'
 year: '20XX'
 department: 'Department of Civil and Construction Engineering'
