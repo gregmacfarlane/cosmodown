@@ -1,2 +1,6 @@
 docs/*
 _bookdown_files/*
+*.log
+*.ist
+*.glo
+*.acn
