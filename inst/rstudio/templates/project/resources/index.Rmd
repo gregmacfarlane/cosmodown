@@ -16,7 +16,9 @@ committeeMembers: |
   
   Harvey Fletcher
 keywords: 'engineering, optimization, document creation'
-layout: '12pt, twoside, openright' # use option 'oneside' for ETD
+layout: '12pt, oneside, openright' 
+# use option 'oneside' for ETD
+# change this to option 'twoside' for printing
 
 # Remove the hashtag to specify which version of output you would like.
 # Can only choose one at a time.
