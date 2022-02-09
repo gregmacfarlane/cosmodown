@@ -41,7 +41,6 @@
 }
 
 \doublespacing  % set line spacing
-\AtBeginDocument{\renewcommand{\ref}[1]{\autoref{#1}}} % for concision, but can be removed if you know what you're doing
 \makeglossaries % process glossaries
 \urlstyle{same} % uses the text font, not a monospace one, for URLs
 \hbadness=9000 % suppress some hbox warnings
