@@ -18,7 +18,7 @@ cosmodown_skeleton <- function(path) {
   # add book_filename to _bookdown.yml and to the base path name
   f <- file.path(path, "_bookdown.yml")
   x <- read_utf8(f)
-  write_utf8(c(sprintf('book_filename: "docs"'), x), f)
+  write_utf8(c(sprintf('book_filename: "thesis"'), x), f)
 
   TRUE
 }

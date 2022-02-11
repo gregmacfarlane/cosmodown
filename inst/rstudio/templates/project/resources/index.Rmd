@@ -22,7 +22,7 @@ layout: '12pt, oneside, openright'
 
 # Remove the hashtag to specify which version of output you would like.
 # Can only choose one at a time.
-knit: bookdown::render_book
+site: bookdown::bookdown_site
 
 # Note that a tab is needed on the line after the `|`.
 abstract: |
