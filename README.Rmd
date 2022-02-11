@@ -73,13 +73,17 @@ be the name of the folder as well as the `.Rproj` Rstudio project file.
     knitr::include_graphics("README/newproject.png")
     ```
     
-5. Select "OK", and the new project should open automatically. Press the "Knit" button at the top of the editor to render the template (to a website), 
+5. Select "OK", and the new project should open automatically. To render the
+document to a website and to a PDF, push the "Build Book" button under the
+"Build" tab. This button also has a drop-down that will allow you to build either
+the site or the PDF.
 
-    ```{r knit-tempalte, echo = FALSE}
+    ```{r knit-template, echo = FALSE}
     knitr::include_graphics("README/knit.png")
     ```
 
-6. If the PDF does not open automatically, you will be able to find it in the newly created `_book/` directory.
+6. The site and the rendered PDF will be stored in the `docs/` folder. 
+
 
 ### Troubleshooting
 

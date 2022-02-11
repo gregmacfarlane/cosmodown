@@ -60,14 +60,14 @@ possible to use this template with a different IDE.
 
     <img src="README/newproject.png" width="50%" style="display: block; margin: auto;" />
 
-5.  Select “OK”, and the new project should open automatically. Press
-    the “Knit” button at the top of the editor to render the template
-    (to a website),
+5.  Select “OK”, and the new project should open automatically. To
+    render the document to a website and to a PDF, push the “Build Book”
+    button under the “Build” tab. This button also has a drop-down that
+    will allow you to build either the site or the PDF.
 
     <img src="README/knit.png" width="50%" style="display: block; margin: auto;" />
 
-6.  If the PDF does not open automatically, you will be able to find it
-    in the newly created `_book/` directory.
+6.  The site and the rendered PDF will be stored in the `docs/` folder.
 
 ### Troubleshooting
 
