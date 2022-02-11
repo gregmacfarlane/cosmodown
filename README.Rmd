@@ -19,12 +19,14 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 <!-- badges: end -->
 
-This package provides a template for writing theses and dissertations at the
+This package provides a template for writing theses and dissertations at 
 Brigham Young University using **rmarkdown** and **bookdown**. Much of this was
 inspired by the [**thesisdown**](https://github.com/ismayc/thesisdown) package
 by Chester Ismay, and this particular implementation was taken directly from [**jahawkdown**](https://github.com/wjakethompson/jayhawkdown) by Jake Thompson.
 
-The original LaTeX template and class document were written by Greg Macfarlane, and modified for use with pandoc and R markdown.
+The original LaTeX template and class document were written by Greg Macfarlane,
+and modified for use with pandoc and R markdown. If you are looking for the 
+BYU LaTeX class only, [it is available here.](https://github.com/byu-transpolab/byuthesis)
 
 ## Installation
 
@@ -35,60 +37,49 @@ You can install cosmodown from github with:
 devtools::install_github("gregmacfarlane/cosmodown")
 ```
 
-You also need a working LaTeX program:
+You also need a working LaTeX program; I recommend the 
+[TinyTeX distribution](https://yihui.org/tinytex/), but 
+complete LaTeX distributions are available below:
 
 * Macintosh: [MacTeX](https://tug.org/mactex/mactex-download.html)
 * Linux: [TeXLive](https://www.tug.org/texlive/acquire-netinstall.html)
 * Windows: [TeXLive](https://www.tug.org/texlive/windows.html)
 
+
 ## Example Usage
 
-The recommended way to use this template is with RStudio; however, it is possible to use this template with a different IDE.
+The recommended way to use this template is with RStudio; however, it is
+possible to use this template with a different IDE.
 
 ### RStudio Usage
 
-1. Open a new RStudio window.
-2. Open a new R Markdown document.
+1. Open Rstudio
+2. Start a new Rstudio project in a new directory
 
     ```{r select-rmd, echo = FALSE}
-    knitr::include_graphics("README/rmarkdown.png")
+    knitr::include_graphics("README/newproject.png")
     ```
 
-3. Select from templates, the University of Kansas Thesis template from the **cosmodown** package.
+3. On the list of templates, select "BYU Thesis using **cosmodown**".
 
     ```{r select-template, echo = FALSE}
-    knitr::include_graphics("README/select-template.png")
+    knitr::include_graphics("README/select_template.png")
     ```
 
-4. Because there are multiple files for this template, you must create a directory to house them, and choose a location for the directory. I suggest calling this directory `index` (you can change this later, but this will make your main R Markdown document be called `index.rmd`).
-5. Select "OK", and the template should open automatically. Press the "Knit" button at the top of the editor to render the template, and read the document for instructions on how to edit the template for your specific paper.
+4. On the new project page, name your project and give it a location. This will
+be the name of the folder as well as the `.Rproj` Rstudio project file.
+
+    ```{r new-project, echo = FALSE}
+    knitr::include_graphics("README/newproject.png")
+    ```
+    
+5. Select "OK", and the new project should open automatically. Press the "Knit" button at the top of the editor to render the template (to a website), 
 
     ```{r knit-tempalte, echo = FALSE}
     knitr::include_graphics("README/knit.png")
     ```
 
 6. If the PDF does not open automatically, you will be able to find it in the newly created `_book/` directory.
-
-### Other Usage
-
-If you are not using RStudio, you can create a new R Markdown from the **cosmodown** template by using `rmarkdown::draft()`.
-
-1. Open R in your preferred IDE.
-2. Open the **cosmodown** template using `rmarkdown::draft()`. This will create a directory called `index/` (or whatever you name the R Markdown document) in your current working directory.
-
-    ```{r draft, echo = TRUE, eval = FALSE}
-    rmarkdown::draft("index.rmd", template = "kansas", package = "cosmodown",
-      create_dir = TRUE)
-    ```
-
-3. When the template opens, you can render the document using `bookdown::render_book()`.
-
-    ```{r render-book, echo = TRUE, eval = FALSE}
-    setwd("index/")
-    bookdown::render_book("index.rmd", "cosmodown::thesis_pdf")
-    ```
-
-4. If the PDF does not open automatically, you will be able to find it in the newly created `_book/` directory.
 
 ### Troubleshooting
 
