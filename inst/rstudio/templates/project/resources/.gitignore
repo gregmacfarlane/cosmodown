@@ -7,3 +7,9 @@ _bookdown_files/*
 *.lof
 *.lot
 *.toc
+_main.aux
+_main.bcf
+_main.nlo
+_main.out
+_main.run.xml
+_main_files
