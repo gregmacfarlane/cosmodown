@@ -5,23 +5,20 @@ title: |
 # Your thesis title should be inverted pyramid-shaped, with the longest
 # line on top and shorter lines below. Add a new line as tab-|-space-Words
 author: 'Cosmo Cougar'
-year: '20XX'
-department: 'Department of Civil and Construction Engineering'
-degree: 'Master of Science'
-doctype: 'thesis' # thesis or dissertation
-committeeMembers: |
-  Brigham Young, Chair 
-  
-  Karl G. Maeser 
-  
-  Harvey Fletcher
+# This is the date of graduation
+date: 'Month 20XX'
+committeechair: Brigham Young
+committeemembers: 
+  - name: Karl G. Maeser
+  - name: Harvey Fletcher
 keywords: 'engineering, optimization, document creation'
-layout: '12pt, oneside, openright' 
-# use option 'oneside' for ETD
-# change this to option 'twoside' for printing
+# Class options are simple/fancy and masters/phd.
+layout: 'simple, masters' 
+# if you are using this for an honors thesis, you can leave off the degree in 
+# layout and specify a degree below
+degree: Master of Science
+department: 'Department of Civil and Construction Engineering'
 
-# Remove the hashtag to specify which version of output you would like.
-# Can only choose one at a time.
 site: bookdown::bookdown_site
 
 # Note that a tab is needed on the line after the `|`.
@@ -47,8 +44,9 @@ acknowledgments: |
   
 # Specify the location of the bibliography below
 bibliography: [book.bib, packages.bib]
-# Download your specific csl file and refer to it in the line below.
-#csl: csl/apa.csl
+bibheadname: "References"
+# Download your specific csl file from https://www.zotero.org/styles and refer to it in the line below.
+csl: apa.csl
 lot: true
 lof: true
 ---
@@ -66,6 +64,7 @@ Use second-level and higher headings within chapters like: `## A short section` 
 The `index.Rmd` file is required, and is also your first book chapter. It will be the homepage when you render the book.
 
 ## Render book
+
 
 You can render the HTML version of this example book without changing anything:
 
