@@ -14,10 +14,10 @@ Chester Ismay, and this particular implementation was taken directly
 from [**jahawkdown**](https://github.com/wjakethompson/jayhawkdown) by
 Jake Thompson.
 
-The original LaTeX template and class document were written by Greg
-Macfarlane, and modified for use with pandoc and R markdown. If you are
-looking for the BYU LaTeX class only, [it is available
-here.](https://github.com/byu-transpolab/byuthesis)
+The original LaTeX template and class document were written by 
+Tim McClain and Andrew Ning, and modified for use with pandoc and R markdown. If you are
+looking for the BYU Engineering LaTeX class only, [it is available
+here.](https://engineering.byu.edu/thesis-dissertation-guidelines)
 
 ## Installation
 
