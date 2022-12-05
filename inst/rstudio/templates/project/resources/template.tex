@@ -58,6 +58,12 @@ $endfor$
 % ---Bibliography source file--- %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %  Default is references.bib
+%
+\makepagestyle{myrefs}
+\makeevenhead{myrefs}%
+    {\normalfont\small\slshape\thepage}{}{\normalfont\small\slshape References}
+\makeoddhead{myrefs}%
+    {\normalfont\small\slshape References}{}{\normalfont\small\slshape\thepage}
 \bibliography{$biblography$}
 
 $if(csl-refs)$
