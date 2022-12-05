@@ -93,6 +93,7 @@
 % -------- math ----------
 \RequirePackage{amsmath}
 \RequirePackage{amsfonts}
+\let\Bbbk\relax
 \RequirePackage{amssymb}
 % ------------------------------
 
