@@ -12,8 +12,8 @@ committeemembers:
   - name: Karl G. Maeser
   - name: Harvey Fletcher
 keywords: 'engineering, optimization, document creation'
-# Class options are simple/fancy and masters/phd.
-layout: 'simple, masters' 
+# Class options are simple/fancy, masters/phd, and twoside (use twoside for printed thesis only)
+layout: 'fancy, masters,twoside' 
 # if you are using this for an honors thesis, you can leave off the degree in 
 # layout and specify a degree below
 degree: Master of Science

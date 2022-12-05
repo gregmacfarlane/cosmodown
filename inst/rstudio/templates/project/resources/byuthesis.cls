@@ -17,12 +17,19 @@
 \DeclareOption{masters}{\@masterstrue}
 \newif\if@phd
 \DeclareOption{phd}{\@phdtrue}
+
+% most students will use oneside, but civil students needing a printed copy will
+% have to have the two-side option available.
+\newcommand*\myprintstyle{oneside}
+\DeclareOption{twoside}{%
+  \renewcommand*\myprintstyle{twoside}
+}
 % -------------------------------------
 
 % -------- set main options to class -------------
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{memoir}}
 \ProcessOptions\relax
-\LoadClass[letterpaper,11pt,oneside,openright]{memoir}  % based off of memoir class
+\LoadClass[\myprintstyle,letterpaper,11pt,openright, ]{memoir}  % based off of memoir class
 \RequirePackage{memhfixc}  % fix for hyperref w/ memoir
 % ----------------------------------------------
 
@@ -287,6 +294,8 @@
 %    {}{}{\normalfont\small\slshape\thepage}
 %\makeevenfoot{byu}%
 %    {\normalfont\small\slshape\thepage}{}{}
+\makeevenhead{byu}%
+    {\normalfont\small\slshape\thepage}{}{\normalfont\small\slshape{Chapter \itshape\thechapter}}
 
 \pagestyle{byu}
 \appto\mainmatter{\pagestyle{byu}}
@@ -391,7 +400,7 @@
 			All Rights Reserved
 			\par
 			\enlargethispage{\titlebottomadjust}
-			\clearpage
+			\cleardoublepage
 		\end{center}
 	\end{Spacing}
 	% for fancy style, reset the page layout back for margin notes
@@ -434,7 +443,7 @@
 
 % ------------ abstract ------------------
 \renewenvironment{abstract}{%
-	\clearpage
+	\cleardoublepage
 	\pdfbookmark[0]{ABSTRACT}{abstract}
 	\setlength{\parskip}{\baselineskip}
 	\vspace*{35pt}	% spacing set to match chapter header spacing
@@ -459,7 +468,7 @@
 
 % ---------- acknowledgments ------------
 \newenvironment{acknowledgments}{%
-	\clearpage
+	\cleardoublepage
 	\pdfbookmark[0]{ACKNOWLEDGMENTS}{acknowledgments}
 	\setlength{\parskip}{\baselineskip}
 	\vspace*{35pt}	% spacing set to match chapter header spacing
