@@ -3,7 +3,9 @@ bookdown::pdf_book:
   latex_engine: pdflatex
   keep_tex: yes
   pandoc_args: [
-    "--top-level-division=chapter"
+    "--top-level-division=chapter",
+    "--standalone",
+    "--embed-resources"
   ]
 bookdown::gitbook:
   css: style.css
