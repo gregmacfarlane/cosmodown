@@ -172,6 +172,8 @@
 %	\renewcommand*{\chapnumfont}{\normalfont\LARGE\sffamily\itshape\colorchapnum}
 %	\renewcommand*{\printchaptername}{}		% We don't print the word "Appendix"
 %	\renewcommand*{\chapternamenum}{}		% No space inserted after "Appendix" and before \chapnum
+    \renewcommand{\chaptername}{Appendix}
+
 }
 
 \RequirePackage{etoolbox}		% provides \appto command used below (append to)
@@ -295,7 +297,7 @@
 %\makeevenfoot{byu}%
 %    {\normalfont\small\slshape\thepage}{}{}
 \makeevenhead{byu}%
-    {\normalfont\small\slshape\thepage}{}{\normalfont\small\slshape{Chapter \itshape\thechapter}}
+    {\normalfont\small\slshape\thepage}{}{\normalfont\small\slshape{\chaptername \itshape\thechapter}}
 
 \pagestyle{byu}
 \appto\mainmatter{\pagestyle{byu}}
